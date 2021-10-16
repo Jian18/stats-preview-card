@@ -14,8 +14,12 @@
 
 <body>
   <div class="card">
-    <img srcset="/images/image-header-mobile.jpg 1x, /images/image-header-desktop.jpg 2x" alt="header-image"
-      class="card-image" />
+
+    <div class="card-image__wrapper">
+      <div class="image-overlay"></div>
+      <img src="/images/image-header-mobile.jpg" alt="header-image" class="mobile-image card-image" />
+      <img src="/images/image-header-desktop.jpg" alt="header-image" class="desktop-image card-image" />
+    </div>
 
     <div class="card-wrapper">
       <h1 class="card-title">
